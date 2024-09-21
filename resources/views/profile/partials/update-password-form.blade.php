@@ -9,7 +9,7 @@
         </p>
     </header>
 
-    <form method="post" action="{{ route('password.update') }}" class="mt-6 space-y-6">
+    <form method="post" action="{{ route('user-password.update') }}" class="mt-6 space-y-6">
         @csrf
         @method('put')
 
@@ -39,7 +39,7 @@
                     x-data="{ show: true }"
                     x-show="show"
                     x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
+                    x-init="setTimeout(() => show = false, 3000)"
                     class="text-sm text-gray-600"
                 >{{ __('Saved.') }}</p>
             @endif
